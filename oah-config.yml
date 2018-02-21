@@ -41,10 +41,13 @@ vagrant_plugins:
 # Memory and CPU to use for this VM.
 vagrant_memory: 1024
 vagrant_cpus: 2
-
+# Minimum required versions.
+oah_vagrant_version_min: '1.8.6'
+oah_ansible_version_min: '2.2'
+# Force use of ansible_local provisioner, even if Ansible is installed on host.
+force_ansible_local: false
 # # The web server software to use. Can be either 'apache' or 'nginx'.
 # oahvm_webserver: apache
-
 # Cron jobs are added to the root user's crontab. Keys include name (required),
 # minute, hour, day, weekday, month, job (required), and state.
 oahvm_cron_jobs: []
